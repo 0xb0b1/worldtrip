@@ -1,63 +1,19 @@
 import Head from "next/head";
 
-import {
-  Flex,
-  Text,
-  Box,
-  Heading,
-  Divider,
-  Image,
-  Stack,
-} from "@chakra-ui/react";
+import { Flex, Text, Box, Heading, Divider, Image } from "@chakra-ui/react";
 
 import Header from "../components/Header";
 import TravelType from "../components/TravelType";
 
-import "swiper/swiper.min.css";
-import "swiper/components/navigation/navigation.min.css";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper/core";
-import SwiperContent from "../components/SwiperContent";
-
-SwiperCore.use([Navigation]);
+import SwiperContainer from "../components/SwiperContainer";
 
 export default function Home() {
-  const continents = [
-    {
-      image: "/images/america-do-norte.png",
-      name: "América do Norte",
-      description: "O continente mais tecnologico",
-    },
-    {
-      image: "/images/america-do-sul.png",
-      name: "América do Sul",
-      description: "O melhor continente",
-    },
-    {
-      image: "/images/asia.png",
-      name: "Ásia",
-      description: "O continente mais populoso",
-    },
-    {
-      image: "/images/africa.png",
-      name: "África",
-      description: "O continente mais colorido",
-    },
-    {
-      image: "/images/continents/europa.png",
-      name: "Europa",
-      description: "O continente mais antigo",
-    },
-    {
-      image: "/images/oceania.png",
-      name: "Oceania",
-      description: "O continente mais peculiar",
-    },
-  ];
-
   return (
     <Box>
+      <Head>
+        <title>Home | worldtrip</title>
+      </Head>
+
       <Header />
       <Box
         bgImage='url("/images/Background.png")'
@@ -102,23 +58,7 @@ export default function Home() {
 
       <TravelType />
 
-      <Box m="8">
-        <Heading as="h2" color="gray.500" fontWeight="500" textAlign="center">
-          Vamos nessa? <Divider as="br" /> Então escolha seu continente
-        </Heading>
-
-        <Swiper navigation={true} color="yellow.500">
-          {continents.map((continent) => (
-            <SwiperSlide>
-              <SwiperContent
-                name={continent.name}
-                description={continent.description}
-                image={continent.image}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </Box>
+      <SwiperContainer />
     </Box>
   );
 }
