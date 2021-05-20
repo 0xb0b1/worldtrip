@@ -54,7 +54,8 @@ yarn server
 yarn dev
 ```
 
-**The application will be running at:
-```
-http://localhost:3000
-```
+
+### The application will be running at:
+
+[http://localhost:3000][http://localhost:3000]
+
