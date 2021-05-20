@@ -1,6 +1,14 @@
 import Head from "next/head";
 
-import { Flex, Text, Box, Heading, Divider, Image } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Box,
+  Heading,
+  Divider,
+  Image,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 
 import Header from "../components/Header";
 import TravelType from "../components/TravelType";
@@ -8,6 +16,11 @@ import TravelType from "../components/TravelType";
 import SwiperContainer from "../components/SwiperContainer";
 
 export default function Home() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
     <Box>
       <Head>
@@ -15,18 +28,13 @@ export default function Home() {
       </Head>
 
       <Header />
-      <Box
-        bgImage='url("/images/Background.png")'
-        bgPosition="center"
-        bgRepeat="no-repeat"
-        bgSize="cover"
-        height="335"
-      >
+
+      <Box bgImage='url("/images/Background.png")' height="335">
         <Flex
-          maxWidth="1240"
+          // maxWidth="1240"
           h="100%"
           mx="auto"
-          px="10"
+          px={["6", "10"]}
           direction="column"
           align="flex-start"
           justify="center"
@@ -46,13 +54,15 @@ export default function Home() {
             Chegou a hora de tirar do papel a viagem que você sempre sonhou.
           </Text>
 
-          <Image
-            position="absolute"
-            right="0"
-            bottom="-35"
-            src="/images/Airplane.svg"
-            alt="Airplane"
-          />
+          {isWideVersion && (
+            <Image
+              position="absolute"
+              right="0"
+              bottom="-35"
+              src="/images/Airplane.svg"
+              alt="Airplane"
+            />
+          )}
         </Flex>
       </Box>
 
