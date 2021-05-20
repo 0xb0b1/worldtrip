@@ -1,4 +1,4 @@
-<h1 align="center">Finance App</h1>
+<h1 align="center">WorldTrip</h1>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/paulo-vicente-6abab0198/">
@@ -18,7 +18,7 @@
   <img alt="" src="https://img.shields.io/github/repo-size/0xb0b1/worldtrip?color=c9c9c9" />
 </p>
 
-> Finance app I built with Rocketseat Discover course.
+> Worltrip is an application to show your what every continent has to offer, Its most popular citites and more...
 
 
 # :eyes: Demo Website
