@@ -1,41 +1,52 @@
 import { Box, Heading, Divider } from "@chakra-ui/react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper/core";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper/core";
 import SwiperContent from "../components/SwiperContent";
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const SwiperContainer = () => {
   const continents = [
     {
       image: "/images/continents/america-do-norte.jpg",
       name: "América do Norte",
+      link: "america-do-norte",
       description: "O continente mais tecnologico",
     },
     {
       image: "/images/continents/america-do-sul.jpg",
       name: "América do Sul",
+      link: "america-do-sul",
       description: "O melhor continente",
     },
     {
       image: "/images/continents/asia.jpg",
       name: "Ásia",
+      link: "asia",
       description: "O continente mais populoso",
     },
     {
       image: "/images/continents/africa.jpg",
       name: "África",
+      link: "africa",
       description: "O continente mais colorido",
     },
     {
       image: "/images/continents/europe.png",
       name: "Europa",
+      link: "europa",
       description: "O continente mais antigo",
     },
     {
       image: "/images/continents/oceania.jpg",
       name: "Oceania",
+      link: "oceania",
       description: "O continente mais peculiar",
     },
   ];
@@ -47,10 +58,12 @@ const SwiperContainer = () => {
       </Heading>
 
       <Swiper
+        slidesPerView={1}
         navigation={true}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         spaceBetween={50}
+        style={{ width: "100%", flex: "1", height: "100%" }}
       >
         {continents.map((continent, key) => (
           <SwiperSlide key={key}>
@@ -58,6 +71,7 @@ const SwiperContainer = () => {
               name={continent.name}
               description={continent.description}
               image={continent.image}
+              link={continent.link}
             />
           </SwiperSlide>
         ))}
