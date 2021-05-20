@@ -41,15 +41,15 @@ As I'm using a fake api, you have to run the server for the application to work.
 
 ### Running the Aplication
 
-** Install the dependencies
+* Install the dependencies
 ```bash 
 yarn install
 ```
-** You I'll need to first, start the server
+* You I'll need to first, start the server
 ```bash
 yarn server
 ```
-** The you can run the app
+* The you can run the app
 ```bash
 yarn dev
 ```
