@@ -8,6 +8,7 @@ const TravelType = () => {
       m="10"
       p="2"
       direction="row"
+      align="center"
       justify={["space-between", "space-evenly"]}
     >
       <TravelItens icon="images/icons/cocktail.svg" name="vida noturna" />

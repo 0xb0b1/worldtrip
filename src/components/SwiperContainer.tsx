@@ -52,7 +52,7 @@ const SwiperContainer = () => {
   ];
 
   return (
-    <Box m="20">
+    <Box mx="5" mt="20">
       <Heading as="h2" color="gray.500" fontWeight="500" textAlign="center">
         Vamos nessa? <Divider as="br" /> Então escolha seu continente
       </Heading>

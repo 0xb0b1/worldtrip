@@ -1,4 +1,4 @@
-import { Box, Stack, Heading, Link } from "@chakra-ui/react";
+import { Flex, Stack, Heading, Link } from "@chakra-ui/react";
 import { useState } from "react";
 
 interface SwiperContentProps {
@@ -16,7 +16,7 @@ const SwiperContent = ({
 }: SwiperContentProps) => {
   return (
     <Link as="a" href={`/continents/${slug}`}>
-      <Box
+      <Flex
         align="center"
         justify="center"
         bgImage={`url("${image}")`}
@@ -26,7 +26,7 @@ const SwiperContent = ({
         height="450"
         mt="8"
       >
-        <Stack align="center" justify="center" pt="40" spacing={4}>
+        <Stack align="center" justify="center" spacing={4}>
           <Heading
             as="h2"
             fontSize={["3xl", "5xl", "7xl"]}
@@ -46,7 +46,7 @@ const SwiperContent = ({
             {description}
           </Heading>
         </Stack>
-      </Box>
+      </Flex>
     </Link>
   );
 };
