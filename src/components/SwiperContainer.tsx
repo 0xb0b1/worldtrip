@@ -16,37 +16,37 @@ const SwiperContainer = () => {
     {
       image: "/images/continents/america-do-norte.jpg",
       name: "América do Norte",
-      link: "america-do-norte",
+      slug: "america-do-norte",
       description: "O continente mais tecnologico",
     },
     {
       image: "/images/continents/america-do-sul.jpg",
       name: "América do Sul",
-      link: "america-do-sul",
+      slug: "america-do-sul",
       description: "O melhor continente",
     },
     {
       image: "/images/continents/asia.jpg",
       name: "Ásia",
-      link: "asia",
+      slug: "asia",
       description: "O continente mais populoso",
     },
     {
       image: "/images/continents/africa.jpg",
       name: "África",
-      link: "africa",
+      slug: "africa",
       description: "O continente mais colorido",
     },
     {
       image: "/images/continents/europe.png",
       name: "Europa",
-      link: "europa",
+      slug: "europa",
       description: "O continente mais antigo",
     },
     {
       image: "/images/continents/oceania.jpg",
       name: "Oceania",
-      link: "oceania",
+      slug: "oceania",
       description: "O continente mais peculiar",
     },
   ];
@@ -71,7 +71,7 @@ const SwiperContainer = () => {
               name={continent.name}
               description={continent.description}
               image={continent.image}
-              link={continent.link}
+              slug={continent.slug}
             />
           </SwiperSlide>
         ))}

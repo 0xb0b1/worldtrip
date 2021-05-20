@@ -5,17 +5,17 @@ interface SwiperContentProps {
   name?: string;
   description: string;
   image: string;
-  link: string;
+  slug: string;
 }
 
 const SwiperContent = ({
   name,
   description,
   image,
-  link,
+  slug,
 }: SwiperContentProps) => {
   return (
-    <Link as="a" href={`/continents/${link}`}>
+    <Link as="a" href={`/continents/${slug}`}>
       <Box
         align="center"
         justify="center"
