@@ -41,7 +41,7 @@ const SwiperContainer = () => {
   ];
 
   return (
-    <Box m={["10", "20", "30", "40"]}>
+    <Box m="20">
       <Heading as="h2" color="gray.500" fontWeight="500" textAlign="center">
         Vamos nessa? <Divider as="br" /> Então escolha seu continente
       </Heading>
