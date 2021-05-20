@@ -31,7 +31,6 @@ export default function Home() {
 
       <Box bgImage='url("/images/Background.png")' height="335">
         <Flex
-          // maxWidth="1240"
           h="100%"
           mx="auto"
           px={["6", "10"]}
