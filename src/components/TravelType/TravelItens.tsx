@@ -1,4 +1,12 @@
-import { Box, Stack, Flex, Text, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Stack,
+  Flex,
+  Text,
+  Image,
+  useBreakpointValue,
+  Tooltip,
+} from "@chakra-ui/react";
 
 interface TravelItensProps {
   icon: string;
@@ -6,6 +14,25 @@ interface TravelItensProps {
 }
 
 const TravelItens = ({ icon, name }: TravelItensProps) => {
+  const isMediumVersion = useBreakpointValue({
+    base: false,
+    md: true,
+  });
+
+  if (!isMediumVersion) {
+    return (
+      <Box>
+        <Stack spacing="4">
+          <Flex align="center" justify="center" direction="column">
+            <Tooltip label={name} aria-label={name}>
+              <Image h="20" src={icon} alt={name} />
+            </Tooltip>
+          </Flex>
+        </Stack>
+      </Box>
+    );
+  }
+
   return (
     <Box>
       <Stack spacing="4">

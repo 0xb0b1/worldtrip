@@ -4,7 +4,12 @@ import TravelItens from "./TravelItens";
 
 const TravelType = () => {
   return (
-    <Flex m="24" direction="row" justify="space-between">
+    <Flex
+      m="10"
+      p="2"
+      direction="row"
+      justify={["space-between", "space-evenly"]}
+    >
       <TravelItens icon="images/icons/cocktail.svg" name="vida noturna" />
       <TravelItens icon="images/icons/surf.svg" name="praia" />
       <TravelItens icon="images/icons/building.svg" name="moderno" />
