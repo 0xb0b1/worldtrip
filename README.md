@@ -18,7 +18,7 @@
   <img alt="" src="https://img.shields.io/github/repo-size/0xb0b1/worldtrip?color=c9c9c9" />
 </p>
 
-> Worldtrip is an application to show your what every continent has to offer, Its most popular citites and more...
+> Worldtrip is an application to show you what every continent has to offer, Its most popular citites and more...
 > We will be seeing how many languages they have, cities, and countries. And If you're thinking of traveling, you can take a look here.
 
 
