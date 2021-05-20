@@ -19,7 +19,7 @@ const SwiperContent = ({ name, description, image }: SwiperContentProps) => {
       height="450"
       mt="8"
     >
-      <Stack align="center" p="40" spacing={4}>
+      <Stack align="center" justify="center" pt="40" spacing={4}>
         <Heading
           as="h2"
           fontSize={["3xl", "5xl", "7xl"]}
