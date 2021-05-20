@@ -1,7 +1,7 @@
 import { Box, Stack, Heading, Link } from "@chakra-ui/react";
 
 interface SwiperContentProps {
-  name: string;
+  name?: string;
   description: string;
   image: string;
 }
@@ -11,6 +11,7 @@ const SwiperContent = ({ name, description, image }: SwiperContentProps) => {
     // <Link as="a" href="#">
     <Box
       align="center"
+      justify="center"
       bgImage={`url("${image}")`}
       bgPosition="center"
       bgRepeat="no-repeat"
@@ -21,7 +22,7 @@ const SwiperContent = ({ name, description, image }: SwiperContentProps) => {
       <Stack align="center" p="40" spacing={4}>
         <Heading
           as="h2"
-          fontSize="6xl"
+          fontSize={["3xl", "5xl", "7xl"]}
           fontWeight="900"
           color="gray.50"
           boxShadow="1px rgba(0, 0, 0, 0.3)"
@@ -30,7 +31,7 @@ const SwiperContent = ({ name, description, image }: SwiperContentProps) => {
         </Heading>
         <Heading
           as="p"
-          fontSize="2xl"
+          fontSize={["1xl", "2xl", "3xl"]}
           fontWeight="600"
           color="gray.100"
           boxShadow="1px rgba(0, 0, 0, 0.3)"
