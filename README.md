@@ -18,7 +18,7 @@
   <img alt="" src="https://img.shields.io/github/repo-size/0xb0b1/worldtrip?color=c9c9c9" />
 </p>
 
-> Worltrip is an application to show your what every continent has to offer, Its most popular citites and more...
+> Worldtrip is an application to show your what every continent has to offer, Its most popular citites and more...
 
 
 # :eyes: Demo Website
