@@ -53,3 +53,8 @@ yarn server
 ```bash
 yarn dev
 ```
+
+**The application will be running at:
+```
+http://localhost:3000
+```
