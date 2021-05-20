@@ -19,6 +19,7 @@
 </p>
 
 > Worldtrip is an application to show your what every continent has to offer, Its most popular citites and more...
+> We will be seeing how many languages they have, cities, and countries. And If you're thinking of traveling, you can take a look here.
 
 
 # :eyes: Demo Website
