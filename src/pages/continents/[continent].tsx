@@ -47,7 +47,7 @@ const Continent = ({ continent }: ContinentProps) => {
   });
 
   return (
-    <Box>
+    <Box alignSelf="center">
       <Header hasBackLink />
 
       <Box
@@ -95,29 +95,33 @@ const Continent = ({ continent }: ContinentProps) => {
             />
           </HStack>
         </Flex>
-      </Box>
 
-      <Box>
-        <Heading
-          as="h1"
-          color="gray.600"
-          fontWeight="600"
-          fontSize={["1xl", "3xl", "6xl"]}
-          textAlign="center"
-        >
-          Cidades +100
-        </Heading>
+        <Box>
+          <Heading
+            as="h1"
+            color="gray.600"
+            fontWeight="600"
+            fontSize={["1xl", "3xl", "6xl"]}
+            textAlign="center"
+          >
+            Cidades +100
+          </Heading>
 
-        <SimpleGrid columns={4} spacing={[5, 10]} my={["5", "45px"]}>
-          {continent.mostPopularCities.map((city) => (
-            <Cities
-              name={city.cityName}
-              countryName={city.countryName}
-              image={city.cityImage}
-              countryCode={city.countryCode}
-            />
-          ))}
-        </SimpleGrid>
+          <SimpleGrid
+            columns={[1, 2, 3, 4]}
+            spacing={[5, 10]}
+            my={["5", "45px"]}
+          >
+            {continent.mostPopularCities.map((city) => (
+              <Cities
+                name={city.cityName}
+                countryName={city.countryName}
+                image={city.cityImage}
+                countryCode={city.countryCode}
+              />
+            ))}
+          </SimpleGrid>
+        </Box>
       </Box>
     </Box>
   );

@@ -10,7 +10,7 @@ interface CitiesProps {
 
 const Cities = ({ name, countryName, image, countryCode }: CitiesProps) => {
   return (
-    <Box w="256px" h="245px" mx={["auto", "0"]}>
+    <Box w="256px" p="2" mx={["auto", "0"]}>
       <Image
         borderTopRadius="4"
         src={image}
@@ -29,8 +29,12 @@ const Cities = ({ name, countryName, image, countryCode }: CitiesProps) => {
         borderBottomRadius="4"
       >
         <Flex direction="column">
-          <Heading>{name}</Heading>
-          <Text>{countryName}</Text>
+          <Heading fontSize="0.95rem" color="gray.800">
+            {name}
+          </Heading>
+          <Text fontSize="" color="gray.400">
+            {countryName}
+          </Text>
         </Flex>
 
         <ReactCountryFlag
