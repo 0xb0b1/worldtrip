@@ -9,7 +9,7 @@ import SwiperCore, {
 } from "swiper/core";
 import SwiperContent from "../components/SwiperContent";
 
-import { continents } from "./data/continentSlider";
+import { continents } from "../data/continentSlider";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
