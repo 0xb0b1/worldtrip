@@ -1,8 +1,7 @@
 import { Flex, Stack, Heading, Link } from "@chakra-ui/react";
-import { useState } from "react";
 
 interface SwiperContentProps {
-  name?: string;
+  name: string;
   description: string;
   image: string;
   slug: string;
