@@ -10,11 +10,18 @@ interface CitiesProps {
 
 const Cities = ({ name, countryName, image, countryCode }: CitiesProps) => {
   return (
-    <Box color="yellow.900" w="256px" h="245px" mx={["auto", "0"]}>
-      <Image src={image} alt={name} w="100%" h="173" objectFit="cover"></Image>
+    <Box w="256px" h="245px" mx={["auto", "0"]}>
+      <Image
+        borderTopRadius="4"
+        src={image}
+        alt={name}
+        w="100%"
+        h="173"
+        objectFit="cover"
+      />
       <Flex
-        align="center"
         justify="space-between"
+        align="center"
         p={6}
         border="1px"
         borderColor="yellow.100"

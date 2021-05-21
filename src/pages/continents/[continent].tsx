@@ -109,14 +109,14 @@ const Continent = ({ continent }: ContinentProps) => {
         </Heading>
 
         <SimpleGrid columns={4} spacing={[5, 10]} my={["5", "45px"]}>
-          {continent.mostPopularCities.map((city) => {
+          {continent.mostPopularCities.map((city) => (
             <Cities
               name={city.cityName}
               countryName={city.countryName}
               image={city.cityImage}
               countryCode={city.countryCode}
-            />;
-          })}
+            />
+          ))}
         </SimpleGrid>
       </Box>
     </Box>
