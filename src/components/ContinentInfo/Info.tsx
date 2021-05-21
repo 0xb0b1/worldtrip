@@ -9,7 +9,9 @@ const Info = ({ numberOf, legend }: CityInfoProps) => {
   return (
     <Flex direction="column" align="center" justify="center">
       <Heading color="#FFBA08">{numberOf}</Heading>
-      <Text color="gray.900">{legend}</Text>
+      <Text fontSize="2xl" fontWeight="600" color="gray.500">
+        {legend}
+      </Text>
     </Flex>
   );
 };
