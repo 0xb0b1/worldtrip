@@ -22,6 +22,12 @@
 > We will be seeing how many languages they have, cities, and countries. And If you're thinking of traveling, you can take a look here.
 
 
+<br />
+<div align="center">
+  <img src="https://github.com/0xb0b1/worldtrip/blob/main/print.jpg" width="720">
+</div>
+
+
 # :eyes: Demo Website
 👉  demo: ...
 
