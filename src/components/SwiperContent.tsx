@@ -15,7 +15,11 @@ const SwiperContent = ({
   slug,
 }: SwiperContentProps) => {
   return (
-    <Link as="a" href={`/continents/${slug}`}>
+    <Link
+      as="a"
+      href={`/continents/${slug}`}
+      style={{ textDecoration: "none" }}
+    >
       <Flex
         align="center"
         justify="center"
