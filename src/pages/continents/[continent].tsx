@@ -60,17 +60,9 @@ const Continent = ({ continent }: ContinentProps) => {
         h={["150", "500"]}
       >
         <Box maxW="1240" h="100%" mx="auto" px={10} position="relative">
-          {isWideVersion ? (
-            <Flex align="flex-end" p="20" h="100%">
-              <Heading>{continent.name}</Heading>
-            </Flex>
-          ) : (
-            <Center w="100%" h="100%">
-              <Text fontSize={["1xl", "3xl", "5xl"]} fontWeight="500">
-                {continent.name}
-              </Text>
-            </Center>
-          )}
+          <Flex align="center" justify="center" h="100%">
+            <Heading>{continent.name}</Heading>
+          </Flex>
         </Box>
       </Box>
 
