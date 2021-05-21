@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 
 import { GetStaticPaths, GetStaticProps } from "next";
+
 import Header from "../../components/Header";
 import CityInfo from "../../components/CityInfo";
 
@@ -58,17 +59,19 @@ const Continent = ({ continent }: ContinentProps) => {
         bgSize="cover"
         h={["150", "500"]}
       >
-        {isWideVersion ? (
-          <Flex align="flex-end" p="20" h="100%">
-            <Heading>{continent.name}</Heading>
-          </Flex>
-        ) : (
-          <Center w="100%" h="100%">
-            <Text fontSize={["1xl", "3xl", "5xl"]} fontWeight="500">
-              {continent.name}
-            </Text>
-          </Center>
-        )}
+        <Box maxW="1240" h="100%" mx="auto" px={10} position="relative">
+          {isWideVersion ? (
+            <Flex align="flex-end" p="20" h="100%">
+              <Heading>{continent.name}</Heading>
+            </Flex>
+          ) : (
+            <Center w="100%" h="100%">
+              <Text fontSize={["1xl", "3xl", "5xl"]} fontWeight="500">
+                {continent.name}
+              </Text>
+            </Center>
+          )}
+        </Box>
       </Box>
 
       <Box maxW="1240" h="100%" mx="auto" px={["4", "10"]}>
@@ -98,8 +101,6 @@ const Continent = ({ continent }: ContinentProps) => {
             />
           </HStack>
         </Flex>
-
-        <div></div>
       </Box>
     </Box>
   );
@@ -110,7 +111,7 @@ export default Continent;
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
-    fallback: true,
+    fallback: "blocking",
   };
 };
 
