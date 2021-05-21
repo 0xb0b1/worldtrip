@@ -57,7 +57,7 @@ const Continent = ({ continent }: ContinentProps) => {
         bgPosition="center"
         bgRepeat="no-repeat"
         bgSize="cover"
-        h={["150", "500"]}
+        h={["250", "400"]}
       >
         <Box maxW="1240" h="100%" mx="auto" px={10} position="relative">
           <Flex
@@ -80,6 +80,7 @@ const Continent = ({ continent }: ContinentProps) => {
         >
           <Text
             maxW="600"
+            mb="10"
             fontSize={["sm", "2xl"]}
             lineHeight={["5", "9"]}
             color="gray.800"
