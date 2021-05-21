@@ -73,7 +73,7 @@ const Continent = ({ continent }: ContinentProps) => {
       <Box maxW="1240" h="100%" mx="auto" px={["4", "10"]}>
         <Flex
           direction={isWideVersion ? "row" : "column"}
-          justify="space-between"
+          justify="space-evenly"
           align="center"
           mt={["6", "20"]}
           mb={["8", "20"]}
@@ -91,8 +91,8 @@ const Continent = ({ continent }: ContinentProps) => {
 
           <ContinentInfo
             countries={continent.numberOfCountries}
-            languages={continent.numberOfLanguages}
             cities={continent.amountMostPopularCities}
+            languages={continent.numberOfLanguages}
           />
         </Flex>
       </Box>
