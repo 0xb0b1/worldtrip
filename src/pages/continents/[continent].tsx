@@ -76,10 +76,9 @@ const Continent = ({ continent }: ContinentProps) => {
 
       <Box maxW="1240" h="100%" mx="auto" px={["4", "10"]}>
         <Flex
-          direction={["column", "row"]}
+          direction={isWideVersion ? "row" : "column"}
           justify="space-between"
           align="center"
-          m="10"
           mt={["6", "20"]}
           mb={["8", "20"]}
         >
