@@ -1,6 +1,14 @@
 import React from "react";
 
-import { Box, Flex, Heading, Text, useBreakpointValue } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  useBreakpointValue,
+  SimpleGrid,
+  HStack,
+} from "@chakra-ui/react";
 
 import { GetStaticPaths, GetStaticProps } from "next";
 
@@ -79,16 +87,37 @@ const Continent = ({ continent }: ContinentProps) => {
             {continent.description}
           </Text>
 
-          <ContinentInfo
-            countries={continent.numberOfCountries}
-            cities={continent.amountMostPopularCities}
-            languages={continent.numberOfLanguages}
-          />
+          <HStack spacing={10} mt={["4", "0"]}>
+            <ContinentInfo
+              countries={continent.numberOfCountries}
+              cities={continent.amountMostPopularCities}
+              languages={continent.numberOfLanguages}
+            />
+          </HStack>
         </Flex>
       </Box>
 
-      <Box maxW="1240" h="100%" mx="auto" px="40">
-        <Cities />
+      <Box>
+        <Heading
+          as="h1"
+          color="gray.600"
+          fontWeight="600"
+          fontSize={["1xl", "3xl", "6xl"]}
+          textAlign="center"
+        >
+          Cidades +100
+        </Heading>
+
+        <SimpleGrid columns={4} spacing={[5, 10]} my={["5", "45px"]}>
+          {continent.mostPopularCities.map((city) => {
+            <Cities
+              name={city.cityName}
+              countryName={city.countryName}
+              image={city.cityImage}
+              countryCode={city.countryCode}
+            />;
+          })}
+        </SimpleGrid>
       </Box>
     </Box>
   );

@@ -13,7 +13,7 @@ import "swiper/components/scrollbar/scrollbar.min.css";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }
