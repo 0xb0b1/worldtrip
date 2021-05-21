@@ -60,8 +60,12 @@ const Continent = ({ continent }: ContinentProps) => {
         h={["150", "500"]}
       >
         <Box maxW="1240" h="100%" mx="auto" px={10} position="relative">
-          <Flex align="center" justify="center" h="100%">
-            <Heading>{continent.name}</Heading>
+          <Flex
+            align="center"
+            justify={isWideVersion ? "flex-start" : "center"}
+            h="100%"
+          >
+            <Heading fontSize={["3xl", "4xl", "6xl"]}>{continent.name}</Heading>
           </Flex>
         </Box>
       </Box>
