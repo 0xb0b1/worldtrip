@@ -1,23 +1,12 @@
 import React from "react";
 
-import {
-  Box,
-  Center,
-  Flex,
-  Heading,
-  Stack,
-  HStack,
-  Icon,
-  SimpleGrid,
-  Text,
-  Tooltip,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useBreakpointValue } from "@chakra-ui/react";
 
 import { GetStaticPaths, GetStaticProps } from "next";
 
 import Header from "../../components/Header";
 import ContinentInfo from "../../components/ContinentInfo";
+import Cities from "../../components/Cities";
 
 import { api } from "../../services/api";
 
@@ -51,7 +40,8 @@ const Continent = ({ continent }: ContinentProps) => {
 
   return (
     <Box>
-      <Header />
+      <Header hasBackLink />
+
       <Box
         bgImage={`url(${continent.bannerImage})`}
         bgPosition="center"
@@ -95,6 +85,10 @@ const Continent = ({ continent }: ContinentProps) => {
             languages={continent.numberOfLanguages}
           />
         </Flex>
+      </Box>
+
+      <Box maxW="1240" h="100%" mx="auto" px="40">
+        <Cities />
       </Box>
     </Box>
   );
