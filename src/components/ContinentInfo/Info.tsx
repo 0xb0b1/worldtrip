@@ -5,7 +5,7 @@ interface CityInfoProps {
   legend: string;
 }
 
-const CityInfo = ({ numberOf, legend }: CityInfoProps) => {
+const Info = ({ numberOf, legend }: CityInfoProps) => {
   return (
     <Flex direction="column" align="center" justify="center">
       <Heading color="#FFBA08">{numberOf}</Heading>
@@ -14,4 +14,4 @@ const CityInfo = ({ numberOf, legend }: CityInfoProps) => {
   );
 };
 
-export default CityInfo;
+export default Info;

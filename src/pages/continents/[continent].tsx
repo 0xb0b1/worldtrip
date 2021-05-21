@@ -17,7 +17,7 @@ import {
 import { GetStaticPaths, GetStaticProps } from "next";
 
 import Header from "../../components/Header";
-import CityInfo from "../../components/CityInfo";
+import ContinentInfo from "../../components/ContinentInfo";
 
 import { api } from "../../services/api";
 
@@ -88,14 +88,12 @@ const Continent = ({ continent }: ContinentProps) => {
           >
             {continent.description}
           </Text>
-          <HStack spacing={10} mt={["4", "0"]}>
-            <CityInfo numberOf={continent.numberOfCountries} legend="países" />
-            <CityInfo numberOf={continent.numberOfLanguages} legend="linguas" />
-            <CityInfo
-              numberOf={continent.amountMostPopularCities}
-              legend="cidades +100"
-            />
-          </HStack>
+
+          <ContinentInfo
+            countries={continent.numberOfCountries}
+            languages={continent.numberOfLanguages}
+            cities={continent.amountMostPopularCities}
+          />
         </Flex>
       </Box>
     </Box>
