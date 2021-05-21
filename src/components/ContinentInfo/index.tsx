@@ -15,7 +15,7 @@ const ContinentInfo = ({
   return (
     <HStack spacing={10} mt={["4", "0"]}>
       <Info numberOf={countries} legend="países" />
-      <Info numberOf={cities} legend="cidades +100" />
+      <Info numberOf={cities} legend="cidades +100" hasToolTip />
       <Info numberOf={languages} legend="linguas" />
     </HStack>
   );

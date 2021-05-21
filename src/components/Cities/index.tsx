@@ -10,7 +10,7 @@ interface CitiesProps {
 
 const Cities = ({ name, countryName, image, countryCode }: CitiesProps) => {
   return (
-    <Box w="256px" p="2" mx={["auto", "0"]}>
+    <Box w="246px" p="4" mx={["auto", "0"]}>
       <Image
         borderTopRadius="4"
         src={image}
