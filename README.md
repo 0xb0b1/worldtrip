@@ -25,7 +25,7 @@
 <br />
 <div align="center">
   <img src="https://github.com/0xb0b1/worldtrip/blob/main/print.jpg" width="720">
-  <img src="https://github.com/0xb0b1/worldtrip/blob/main/print-mobile.jpg" width="720">
+  <img src="https://github.com/0xb0b1/worldtrip/blob/main/print-mobile.jpg">
 </div>
 
 
