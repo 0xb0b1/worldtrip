@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper/core";
 import SwiperContent from "../components/SwiperContent";
 
-import { continents } from "../data/continentSlider";
+import { continents } from "../data/sliderContent";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
