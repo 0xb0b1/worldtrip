@@ -1,17 +1,12 @@
 import { Box, Heading, Divider } from "@chakra-ui/react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-} from "swiper/core";
+import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper/core";
 import SwiperContent from "../components/SwiperContent";
 
 import { continents } from "../data/continentSlider";
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 const SwiperContainer = () => {
   return (
